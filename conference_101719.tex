@@ -26,17 +26,17 @@ felicia.audrey@student.pradita.ac.id}
 Tangerang Selatan, Indonesia \\
 david.tulus@student.pradita.ac.id}
 \and
-\IEEEauthorblockN{3 Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+\IEEEauthorblockN{Anantaujas Cipta Adinata}
+\IEEEauthorblockA{\textit{Jurusan Informatika} \\
+\textit{Universitas Pradita}\\
+Tangerang Selatan, Indonesia \\
+anantaujas.cipta@student.pradita.ac.id}
 \and
-\IEEEauthorblockN{4 Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+\IEEEauthorblockN{3 William Kent}
+\IEEEauthorblockA{\textit{Jurusan Informatika} \\
+\textit{Universitas Pradita}\\
+Tangerang Selatan, Indonesia \\
+william.kent@student.pradita.ac.id}
 \and
 \IEEEauthorblockN{5 Given Name Surname}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
@@ -55,11 +55,16 @@ email address or ORCID}
 \end{IEEEkeywords}
 
 \section{Pendahuluan}
-Dalam pengembangan perangkat lunak, yang perlu dipikirkan saat membuat aplikasi bukan hanya menulis kode, melainkan juga merancang struktur yang mudah untuk dipahami dan dikembangkan. Maka untuk itu dibutuhkan arsitektur perangkat lunak yang dapat membantu mengorganisasi dan menyusun sistem secara efektif.
+Pola arsitektur sangat penting dalam bidang pengembangan perangkat lunak karena pola tersebut memainkan peran penting dalam menentukan struktur dan perilaku setiap aplikasi. Model View Controller (MVC) dan Model View Intent (MVI) adalah dua paradigma arsitektur terkemuka yang telah diadopsi secara luas dalam beberapa tahun terakhir. Salah satu paradigma ini dikenal sebagai Model View Controller. Membangun solusi perangkat lunak yang terukur, dapat dipelihara, dan efisien dapat dicapai dengan bantuan arsitektur ini, yang menyediakan kerangka kerja terorganisir bagi pengembang. 
 
-Pada arsitektur perangkat lunak, terdapat pola arsitektur yang membantu pengembang aplikasi dalam merancang dan membangun aplikasi yang lebih terstruktur dan terorganisir. Pola arsitektur membantu dalam memisahkan tanggung jawab aplikasi pada komponen-komponen yang berbeda, sehingga memudahkan dalam pemeliharan dan pengembangan aplikasi. Di antaranya, terdapat dua pola arsitektur yang digunakan. MVC (Model-View-Controller), yang lebih umum digunakan dan MVI (Model-View-Intent).
+Sejak didirikan pada akhir tahun 1970an, MVC telah menjadi komponen yang sangat diperlukan dalam bidang rekayasa perangkat lunak \cite{Hidayat_Surarso_2012}. Akarnya dapat ditelusuri kembali ke Smalltalk. Hal ini dilakukan dengan membagi aplikasi menjadi tiga komponen yang saling berhubungan: Model, yang bertugas mengelola data dan logika bisnis; Tampilan, yang bertugas menyajikan antarmuka pengguna; dan Pengontrol, yang bertindak sebagai perantara antara Model dan View, menangani masukan pengguna dan memperbarui Model sesuai kebutuhan \cite{Chauhan_Kumar_Sethia_Alam_2021}. Memisahkan permasalahan ini satu sama lain akan membantu mendorong modularitas dan membuat pemeliharaan dan pengujian menjadi lebih sederhana. Selain itu, MVI adalah pola arsitektur yang relatif baru yang mendapatkan daya tarik, khususnya dalam konteks pemrograman reaktif dan paradigma fungsional. Hal ini karena MVI merupakan pola yang dikembangkan relatif baru \cite{Mezzalira_2018}. 
 
-Makalah ini ditulis dengan tujuan mengidentifikasi dan membandingkan MVC dan MVI berdasarkan kelebihan, kekurangan, dan seberapa efisien dalam pengembangan perangkat lunak. Dengan pengetahuan ini, Peneliti berharap pengembang perangkat lunak dapat mengetahui pola arsitektur yang lebih tepat untuk dipakai, sesuai dengan kebutuhan pengembang.
+MVI menekankan pada kekekalan dan aliran data yang dapat diprediksi di seluruh aplikasi. Fondasinya didasarkan pada prinsip aliran data searah. Model, yang bertanggung jawab untuk mewakili keadaan aplikasi saat ini, Tampilan, yang bertanggung jawab untuk merender antarmuka pengguna berdasarkan keadaan saat ini, dan \textit{Intent}, yang merangkum tindakan pengguna sebagai peristiwa yang tidak dapat diubah yang memicu pembaruan keadaan, adalah tiga inti komponen yang membentuk sistem ini [\cite{Gunawan_Lawi_Adnan_2016}. Melalui penggunaan pendekatan ini, gaya pemrograman yang lebih deklaratif dan dapat diprediksi didorong, yang bermanfaat untuk pengembangan aplikasi yang sangat reaktif dan terukur. Karakteristik kinerja MVC dan MVI terus menjadi topik diskusi dan penyelidikan, meskipun faktanya MVC dan MVI menawarkan keunggulan menarik dalam hal pemeliharaan, skalabilitas, dan pemisahan perhatian. Ada kemungkinan besar bahwa efektivitas pola arsitektur dapat berdampak signifikan terhadap pengalaman pengguna secara keseluruhan, khususnya di lingkungan dengan sumber daya terbatas, seperti perangkat seluler atau browser web \cite{Deacon_2009}. 
+
+Pengembang perangkat lunak sangat perlu memahami dan mengoptimalkan kinerja aplikasi yang dibangun menggunakan pola arsitektur berbeda, itulah sebabnya penelitian bertajuk "Unveiling Efficiency: Analyzing Performance in Model View Controller (MVC) vs MVI (Model View Intent)" sangat penting. Pengembang berada di bawah tekanan yang semakin besar untuk menyediakan perangkat lunak yang tidak hanya berfungsi sesuai harapan namun juga berjalan lancar di semua perangkat dan platform seiring kemajuan teknologi dan ekspektasi pengguna yang semakin meningkat \cite{Khotimah_2016}. Selain itu, lingkungan dengan sumber daya terbatas menjadi semakin umum, terutama dalam konteks aplikasi seluler dan web, yang menyoroti pentingnya penelitian ini. 
+
+Meningkatnya jumlah perangkat seluler dan perangkat \textit{Internet of Things} (IoT) menjadikan pengoptimalan kinerja aplikasi menjadi semakin penting guna memberikan pengalaman pengguna yang lancar sekaligus meminimalkan beban pada sumber daya sistem seperti memori, CPU, dan masa pakai baterai \cite{Anhar_Swari_Aditiawan_2024}. Penelitian ini memberikan wawasan praktis kepada pengembang untuk mengatasi masalah kinerja dan meningkatkan kualitas aplikasi dengan menganalisis metrik kinerja penting seperti daya tanggap, pemanfaatan sumber daya, skalabilitas, dan efisiensi baterai. Selain itu, kemampuan pengujian dan kemampuan debug menjadi lebih penting seiring dengan semakin kompleks dan terhubungnya sistem perangkat lunak \cite{Gunawan_Lawi_Adnan_2016}.
+
 
  
 
