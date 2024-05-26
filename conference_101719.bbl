@@ -1,0 +1,63 @@
+\begin{thebibliography}{10}
+
+\bibitem{Anhar_Swari_Aditiawan_2024}
+F.~F. Anhar, M.~H.~P. Swari, and F.~P. Aditiawan.
+\newblock Analisis perbandingan implementasi clean architecture menggunakan 
+  mvp, mvi, dan mvvm pada pengembangan aplikasi android native.
+\newblock {\em Jupiter: Publikasi Ilmu Keteknikan Industri, Teknik Elektro dan
+  Informatika}, 2(2):181–191, 2024.
+
+\bibitem{bucanek2009model}
+James Bucanek.
+\newblock Model-view-controller pattern.
+\newblock {\em Learn Objective-C for Java Developers}, pages 353--402, 2009.
+
+\bibitem{Chauhan_Kumar_Sethia_Alam_2021}
+Kshitij Chauhan, Shivam Kumar, Divyashikha Sethia, and Mohammad~Nadeem Alam.
+\newblock Performance analysis of kotlin coroutines on android in a
+  model-view-intent architecture pattern.
+\newblock {\em 2021 2nd International Conference for Emerging Technology
+  (INCET)}, May 2021.
+
+\bibitem{Deacon_2009}
+J.~Deacon.
+\newblock {\em Model-View-Controller (MVC) Architecture,” Computer Systems
+  Development, Consulting Training}, page 1–6, 2009.
+
+\bibitem{Gunawan_Lawi_Adnan_2016}
+Gunawan Gunawan, Armin Lawi, and Adnan Adnan.
+\newblock Analisis arsitektur aplikasi web menggunakan model view controller
+  (mvc) pada framework java server faces.
+\newblock {\em Scientific Journal of Informatics}, 3(1):55–67, Jun 2016.
+
+\bibitem{Hidayat_Surarso_2012}
+A~Hidayat and B~Surarso.
+\newblock Penerapan arsitektur model view controller (mvc) dalam  rancang
+  bangun sistem kuis online adaptif.
+\newblock {\em Seminar Nasional Teknologi Informasi dan Komunikasi 2012
+  (SENTIKA 2012)}, page 57–64, 2012.
+
+\bibitem{Khotimah_2016}
+Khusnul Khotimah.
+\newblock Pengembangan prototipe computer assisted test (cat) menggunakan
+  arsitektur model view controller  pada badan kepegawaian negara.
+\newblock {\em Jurnal Teknologi}, 8(2):53, Jul 2016.
+
+\bibitem{leff2001web}
+Avraham Leff and James~T Rayfield.
+\newblock Web-application development using the model/view/controller design
+  pattern.
+\newblock In {\em Proceedings fifth ieee international enterprise distributed
+  object computing conference}, pages 118--127. IEEE, 2001.
+
+\bibitem{Mezzalira_2018}
+Luca Mezzalira.
+\newblock Cycle.js and mvi.
+\newblock {\em Front-End Reactive Architectures}, page 97–127, 2018.
+
+\bibitem{qureshi2014comparison}
+M~Qureshi and Fatima Sabir.
+\newblock A comparison of model view controller and model view presenter.
+\newblock {\em arXiv preprint arXiv:1408.5786}, 2014.
+
+\end{thebibliography}
