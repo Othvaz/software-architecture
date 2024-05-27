@@ -1,0 +1,19 @@
+@startuml hu
+
+actor User
+participant View
+participant Model
+participant Intent as UpdateValueIntent
+
+User -> View++ : change value of spinner
+View -> View : JSpinnerChangeListener.stateChanged()
+View -> UpdateValueIntent++ : new UpdateValueIntent(sourceName, targetName, value)
+View -> Model++ : handleIntent(UpdateValueIntent)
+Model -> Model : updateSpinnerState(targetName, value + 1)
+Model -> View : updateViewState(targetName, value + 1)
+View -> View : update spinner display
+
+UpdateValueIntent--
+Model--
+View--
+@enduml

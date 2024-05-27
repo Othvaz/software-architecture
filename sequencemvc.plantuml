@@ -1,0 +1,17 @@
+@startuml mvcsequence
+
+actor User
+
+participant View
+participant Controller
+Participant Model
+
+User -> View++: change value of spinner
+View -> Controller++: handleChange(modelName, spinnerName, value)
+Controller -> Model++: setValue(spinnerName, value)
+Model -> View: update spinner display
+View--
+Controller--
+Model--
+
+@enduml

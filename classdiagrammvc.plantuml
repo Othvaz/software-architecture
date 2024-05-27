@@ -1,0 +1,54 @@
+@startuml mvcdiagram
+
+class MVCApp{
+    +main(args : String[]) : void
+}
+
+class Model {
+    -name : String
+    -values : Map<String, Integer>
+    -view : View
+    +Model(name : String)
+    +getName() : String
+    +setName(name : String) : void
+    +getValues() : Map<String, Integer>
+    +getValue(key : String) : int
+    +setValues(values : Map<String, Integer>) : void
+    +setValue(key : String, value : int) : Integer
+    +getView() : View
+    +setView(view : View) : void
+}
+
+class View {
+    -contentPane : JPanel
+    -spinner001 : JSpinner
+    -spinner002 : JSpinner
+    -spinner003 : JSpinner
+    -spinner001b : JSpinner
+    -spinner002b : JSpinner
+    -spinner003b : JSpinner
+    -modelName : String
+    +View()
+    +getModelName() : String
+    +setModelName(modelName : String) : void
+}
+
+
+class Controller{
+    -models : Map<String, Model>
+    +handleChange(modelName : String, spinnerName : String, value : Int)
+    +getModels() : Map<String, Model>
+    +setModels(models : Map<String, Model>) : void
+}
+
+Model --> View
+View --> Model
+Controller --> Model
+
+MVCApp --> Controller 
+MVCApp --> Model
+MVCApp --> View 
+
+
+@enduml
+
